@@ -1,0 +1,14 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-AXIOS-174505:
+    - '@arkecosystem/core-container > axios':
+        patched: '2019-05-07T08:01:54.492Z'
+    - '@arkecosystem/core-transaction-pool > @arkecosystem/core-container > axios':
+        patched: '2019-05-07T08:01:54.492Z'
+    - '@arkecosystem/core-transaction-pool > @arkecosystem/core-database > @arkecosystem/core-container > axios':
+        patched: '2019-05-07T08:01:54.492Z'
+    - '@arkecosystem/core-transaction-pool > @arkecosystem/core-database > @arkecosystem/core-utils > @arkecosystem/core-container > axios':
+        patched: '2019-05-07T08:01:54.492Z'
