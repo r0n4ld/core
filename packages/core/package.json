@@ -48,7 +48,7 @@
     "lint": "eslint ./ --fix"
   },
   "dependencies": {
-    "@arkecosystem/core-api": "~0.2",
+    "@arkecosystem/core-api": "~2.1.0",
     "@arkecosystem/core-blockchain": "~0.2",
     "@arkecosystem/core-config": "~0.2",
     "@arkecosystem/core-container": "~0.2",
@@ -57,7 +57,7 @@
     "@arkecosystem/core-graphql": "~0.2",
     "@arkecosystem/core-json-rpc": "~0.2",
     "@arkecosystem/core-logger-winston": "~0.2",
-    "@arkecosystem/core-p2p": "~0.2",
+    "@arkecosystem/core-p2p": "~2.3.0",
     "@arkecosystem/core-snapshots": "~0.1",
     "@arkecosystem/core-transaction-pool-mem": "~0.2",
     "@arkecosystem/core-webhooks": "~0.2",
