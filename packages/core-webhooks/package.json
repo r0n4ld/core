@@ -23,7 +23,7 @@
     "fs-extra": "^7.0.1",
     "hapi-pagination": "^2.0.1",
     "joi": "^14.3.0",
-    "sequelize": "^4.41.2",
+    "sequelize": "^5.8.11",
     "sqlite3": "^4.0.4",
     "umzug": "^2.2.0"
   },
