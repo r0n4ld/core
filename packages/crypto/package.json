@@ -19,14 +19,15 @@
     "dist"
   ],
   "scripts": {
-    "prepublish": "yarn run lint && yarn run build",
+    "prepublish": "npm run snyk-protect; yarn run lint && yarn run build",
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --config build/webpack.config.js",
     "test": "cross-env ARK_ENV=test jest --runInBand --detectOpenHandles",
     "test:coverage": "cross-env ARK_ENV=test jest --coverage --coveragePathIgnorePatterns='/(defaults.js|index.js)$' --runInBand --detectOpenHandles",
     "test:debug": "cross-env ARK_ENV=test node --inspect-brk ../../node_modules/.bin/jest --runInBand",
     "test:watch": "jest --watch",
     "test:watch:all": "jest --watchAll",
-    "lint": "eslint ./ --fix"
+    "lint": "eslint ./ --fix",
+    "snyk-protect": "snyk protect"
   },
   "dependencies": {
     "bignumber.js": "^8.0.1",
@@ -49,9 +50,11 @@
     "tiny-glob": "^0.2.3",
     "webpack-merge": "^4.1.4",
     "webpack-node-externals": "^1.7.2",
-    "wif": "^2.0.6"
+    "wif": "^2.0.6",
+    "snyk": "^1.189.0"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "snyk": true
 }
