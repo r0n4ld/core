@@ -1,0 +1,26 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - '@arkecosystem/core-api > lodash':
+        patched: '2019-07-04T03:41:52.640Z'
+    - '@arkecosystem/crypto > webpack-merge > lodash':
+        patched: '2019-07-04T03:41:52.640Z'
+    - '@arkecosystem/core-blockchain > async > lodash':
+        patched: '2019-07-04T03:41:52.640Z'
+    - '@arkecosystem/core-webhooks > sequelize > lodash':
+        patched: '2019-07-04T03:41:52.640Z'
+    - '@arkecosystem/core-blockchain > @arkecosystem/crypto > webpack-merge > lodash':
+        patched: '2019-07-04T03:41:52.640Z'
+    - '@arkecosystem/core-logger-winston > winston > async > lodash':
+        patched: '2019-07-04T03:41:52.640Z'
+    - '@arkecosystem/core-p2p > @arkecosystem/core-container > @arkecosystem/crypto > webpack-merge > lodash':
+        patched: '2019-07-04T03:41:52.640Z'
+    - '@arkecosystem/core-api > @arkecosystem/core-transaction-pool > @arkecosystem/core-container > @arkecosystem/crypto > webpack-merge > lodash':
+        patched: '2019-07-04T03:41:52.640Z'
+    - '@arkecosystem/core-api > @arkecosystem/core-transaction-pool > @arkecosystem/core-database > @arkecosystem/core-utils > @arkecosystem/crypto > webpack-merge > lodash':
+        patched: '2019-07-04T03:41:52.640Z'
+    - '@arkecosystem/core-api > @arkecosystem/core-transaction-pool > @arkecosystem/core-database > @arkecosystem/core-utils > @arkecosystem/core-container > @arkecosystem/crypto > webpack-merge > lodash':
+        patched: '2019-07-04T03:41:52.640Z'
